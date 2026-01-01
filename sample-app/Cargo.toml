@@ -1,0 +1,18 @@
+[package]
+name = "allscreenshots-demo"
+version = "0.1.0"
+edition = "2021"
+authors = ["Allscreenshots <support@allscreenshots.com>"]
+description = "Demo web application for the Allscreenshots Rust SDK"
+license = "Apache-2.0"
+
+[dependencies]
+allscreenshots-sdk = { path = "../sdk" }
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.5", features = ["fs", "cors"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+base64 = "0.22"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
