@@ -1,0 +1,20 @@
+name: SDK validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  sdk:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: jdx/mise-action@5228313ee0372e111a38da051671ca30fc5a96db # v3
+        with:
+          version: '2026.10.2'
+      - name: Pin Bundler
+        if: contains(github.repository, '-ruby')
+        run: gem install bundler --version 4.0.16 --no-document
+      - name: Build and test SDK HTTP transport
+        run: python3 tools/verify.py --build --fixture

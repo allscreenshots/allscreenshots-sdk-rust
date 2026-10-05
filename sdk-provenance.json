@@ -1,0 +1,23 @@
+{
+  "configSha256": "d79e718e3fa6154cab38fe57b4ddafd90778049f5c5304ee7b57225a5c950946",
+  "contractSha256": "a8a3cb65cfa1851f2c37d8d77a847089bff08f69bb14c5b32a34aba77b169f80",
+  "generationInputSha256": "6e89d408bf086dd48805337218cc6feeb21ccd734a5886f939aa26635d5a4e7b",
+  "generator": {
+    "sha256": "41ce4f6b07f196676439d710759fa1ced7a08066d06ff1bf314681470289efae",
+    "url": "https://repo.maven.apache.org/maven2/org/openapitools/openapi-generator-cli/7.25.0/openapi-generator-cli-7.25.0.jar",
+    "version": "7.25.0"
+  },
+  "language": "rust",
+  "packagingSha256": "4233a3b834513928f27fcbd08d134fc17072d0a4910a4e98915f6d52f379f0d5",
+  "pipelineSha256": "06c55b45ea6f0f98a2d62e9114b57abca0741567bade0ad84bcdff4b392a641d",
+  "rawBodyOperations": [
+    "captureSync",
+    "compose",
+    "getJobOutputResult",
+    "getJobResult",
+    "getSyncCaptureOutputResult",
+    "getSyncCaptureResult",
+    "output"
+  ],
+  "toolchainSha256": "0f84eb18fc771f18230285aa19cd2d2a6f263b203ef95914ba32a21b1d7cb262"
+}

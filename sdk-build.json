@@ -1,0 +1,20 @@
+{
+  "language": "rust",
+  "build": [
+    [
+      "cargo",
+      "check",
+      "--locked"
+    ],
+    [
+      "cargo",
+      "build",
+      "--locked",
+      "--manifest-path",
+      "sample-app/Cargo.toml"
+    ]
+  ],
+  "run": [
+    "./sample-app/target/debug/allscreenshots-sdk-demo"
+  ]
+}

@@ -1,0 +1,23 @@
+[package]
+name = "allscreenshots-sdk"
+version = "1.0.0"
+authors = ["OpenAPI Generator team and contributors"]
+description = "Capture websites, manage jobs, compose images, schedule captures, crawl sites, and read usage."
+license = "Apache-2.0"
+edition = "2021"
+include = ["src/**", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE*", "openapi.json", "sdk-provenance.json"]
+repository = "https://github.com/allscreenshots/allscreenshots-sdk-rust"
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_with = { version = "^3.8", default-features = false, features = ["base64", "std", "macros"] }
+serde_json = "^1.0"
+serde_repr = "^0.1"
+url = "^2.5"
+chrono = { version = "^0.4",  features = ["serde"] }
+reqwest = { version = "^0.13", default-features = false, features = ["json", "multipart", "query", "form"] }
+
+[features]
+default = ["rustls"]
+native-tls = ["reqwest/native-tls"]
+rustls = ["reqwest/rustls"]

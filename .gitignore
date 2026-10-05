@@ -1,26 +1,16 @@
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment
-.env
-.env.local
-.env.*.local
-
-# Build output
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.egg-info/
+build/
+.build/
+.swiftpm/
 target/
-Cargo.lock
-
-# Backup files
-**/*.rs.bk
-
-# MSVC Windows builds
-*.pdb
-
+bin/
+obj/
+vendor/
+.bundle/
+test-results/
+capture.png
+sample-app/worker
