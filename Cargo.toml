@@ -1,12 +1,18 @@
 [package]
 name = "allscreenshots-sdk"
 version = "1.0.0"
-authors = ["OpenAPI Generator team and contributors"]
-description = "Capture websites, manage jobs, compose images, schedule captures, crawl sites, and read usage."
+authors = ["Allscreenshots <support@allscreenshots.com>"]
+description = "Official Rust SDK for the Allscreenshots API: capture websites, manage jobs, compose images, schedule captures, crawl sites, and read usage."
 license = "Apache-2.0"
 edition = "2021"
+rust-version = "1.88"
 include = ["src/**", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE*", "openapi.json", "sdk-provenance.json"]
 repository = "https://github.com/allscreenshots/allscreenshots-sdk-rust"
+homepage = "https://allscreenshots.com"
+documentation = "https://docs.allscreenshots.com"
+readme = "README.md"
+keywords = ["allscreenshots", "screenshot", "api", "capture", "web"]
+categories = ["api-bindings", "web-programming::http-client"]
 
 [dependencies]
 serde = { version = "^1.0", features = ["derive"] }
